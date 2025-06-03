@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Express LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, orange 0%, limegreen 100%);
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+    }
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 1em;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+      padding: 3em 2em;
+      background: url('https://source.unsplash.com/1600x600/?delivery,van') no-repeat center center/cover;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5em;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 2em 1em;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: limegreen;
+    }
+    .services ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1em;
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      background: #f9f9f9;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .contact a {
+      color: #ff6600;
+      text-decoration: none;
+    }
+    .form-container {
+      margin-top: 2em;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    input, textarea {
+      padding: 0.75em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 0.75em;
+      background-color: orange;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: darkorange;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Star Express LLC</strong></div>
+    <div>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <img src="logo.png" alt="Star Express LLC Logo" style="max-width: 250px; margin-bottom: 1em;">
+    <h1>Logistics with a Family Feel</h1>
+    <p>Dedicated. Reliable. Local.</p>
+  </header>
+
+  <section class="services" id="services">
+    <h2>What We Deliver</h2>
+    <ul>
+      <li>Dry Goods</li>
+      <li>Local Courier Services</li>
+      <li>OTR Freight Support</li>
+      <li>Partnered Delivery Contracts</li>
+    </ul>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About the Owner</h2>
+    <p><strong>James Bass III</strong> has over 7 years of logistics experience spanning local routes and over-the-road deliveries. Inspired by his father and grandfather’s careers in transportation, James brings professionalism, positive energy, and family-oriented service to every delivery. He recently launched Star Express LLC with his first cargo van and a mission to serve the Jackson Metro area with distinction.</p>
+    <p>He is the proud father of two daughters, Nova and Lauren, and sees Star Express as a legacy built on values, relationships, and excellence.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:starexpressllc23@gmail.com">starexpressllc23@gmail.com</a></p>
+    <p>Phone: <a href="tel:+16015000827">(601) 500-0827</a></p>
+
+    <div class="form-container">
+      <h3>Send a Message or Booking Inquiry</h3>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" rows="5" placeholder="Your Message or Booking Details" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Star Express LLC. All rights reserved.</p>
+  </footer>
+</body>
+</html>
